@@ -3,9 +3,12 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import mascotasRoutes from "./routes/mascotas.js";
 import dbClient from "./config/dbClient.js";
+import cors from "cors";
 
 dotenv.config();
 const app = express();
+app.use(cors()); 
+app.use(express.json());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
