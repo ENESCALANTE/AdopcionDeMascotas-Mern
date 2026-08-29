@@ -10,7 +10,7 @@ function App() {
     imagen: ''
   });
 
-  const API_URL = 'http://localhost:5000/mascotas';
+  const API_URL = 'https://adopcion-de-mascotas-mern.vercel.app/';
 
   // Cargar mascotas al iniciar
   const obtenerMascotas = () => {
