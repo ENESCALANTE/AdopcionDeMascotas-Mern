@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/mascotas/(.*)",
+      "dest": "app.js"
+    },
+    {
+      "src": "/mascotas",
+      "dest": "app.js"
+    }
+  ]
+}
